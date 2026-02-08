@@ -1,6 +1,7 @@
 :root {
   --colorwhite: rgba(255, 255, 255, 0.9);
   --color1: #8ab2f0;
+  --color2: #60799f;
 }
 
 * {
@@ -27,6 +28,10 @@ header {
   grid-template-columns: 2fr 3fr 2fr;
 }
 
+h1 {
+  font-size: 2.4rem;
+}
+
 .header-image {
   margin: auto;
   max-height: 35vh;
@@ -51,10 +56,30 @@ nav {
 .about {
   height: 50vh;
   border: 1px solid var(--color1);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+  }
 }
 
-.about-text {
-  display: flex;
+.about-span1 {
+  width: 45vw;
+  margin-top: 2rem;
+  margin-left: -2.8rem;
+  p {
+    max-width: 60ch;
+  }
+}
+
+.about-span2 {
+  width: 25vw;
+  margin-top: 2rem;
+  li {
+    margin-top: 0.2rem;
+  }
 }
 
 .project-div {
@@ -85,7 +110,7 @@ nav {
   max-width: 80%;
   max-height: 100%;
   padding: 1rem;
-  border: solid 2px rgba(255, 255, 255, 0.9);
+  border: solid 2px var(--color2);
   border-radius: 20px;
 }
 
